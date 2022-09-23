@@ -2,13 +2,13 @@ import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
   header: {
-    height: 80,
+    height: 60,
     backgroundColor: '#fff',
   },
   headerTitle: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 40,
+    marginTop: 20,
     position: 'relative',
   },
   title: {

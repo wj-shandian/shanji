@@ -33,7 +33,7 @@ const data = [
   {icon: 'icon-xiaoxue', name: '小雪'},
   {icon: 'icon-daxue', name: '大雪'},
   {icon: 'icon-taiyangshengqi', name: '日出'},
-  {icon: 'icon-taiyangluoxia', name: '日落'},
+  {icon: 'icon-taiyangxiala', name: '日落'},
   {icon: 'icon-yejianyouyu', name: '夜间有雨'},
   {icon: 'icon-yejianyouxue', name: '夜间有雪'},
   {icon: 'icon-yewan', name: '夜晚'},

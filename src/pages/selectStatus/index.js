@@ -37,7 +37,7 @@ const data = [
   {icon: 'icon-daku', name: '大哭'},
   {icon: 'icon-nanshou', name: '难受'},
   {icon: 'icon-nanguo', name: '伤心'},
-  {icon: 'icon-qiudale', name: '糗大了'},
+  {icon: 'icon-xiudaliao', name: '糗大了'},
   {icon: 'icon-liuhan', name: '无语'},
   {icon: 'icon-bulini', name: '简直了'},
 ];

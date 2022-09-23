@@ -99,10 +99,13 @@ function Home({navigation}) {
             </TouchableWithoutFeedback>
           )}
           rightOpenValue={-75}
+          stopRightSwipe={-75}
         />
-      </View>
-      <View style={styles.footerDesc}>
-        <Text>点击右上角添加按钮 开始写你的感悟吧</Text>
+        {list?.length === 0 ? (
+          <View style={styles.footerDesc}>
+            <Text>点击右上角添加按钮 开始写你的感悟吧</Text>
+          </View>
+        ) : null}
       </View>
     </View>
   );
