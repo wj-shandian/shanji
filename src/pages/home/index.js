@@ -62,6 +62,7 @@ function Home({navigation}) {
     const unsubscribe = navigation.addListener('focus', () => {
       // 获取某个key下的所有数据(仅key-id数据)
       storage.getAllDataForKey('recordData').then(res => {
+        console.log(res, 'res');
         setList(res);
       });
     });

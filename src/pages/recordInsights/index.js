@@ -43,7 +43,7 @@ export default function RecordInsights({route, navigation}) {
   };
   useEffect(() => {
     const unsubscribe = navigation.addListener('beforeRemove', e => {
-      if (!visible && content) {
+      if (!visible && content && e?.data?.action?.type === 'GO_BACK') {
         e.preventDefault();
       }
       setVisible(true);

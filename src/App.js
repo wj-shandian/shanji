@@ -17,6 +17,7 @@ import ChargeAccount from './pages/chargeAccount';
 import SelectStatus from './pages/selectStatus';
 import Weather from './pages/weather';
 import RecordInsights from './pages/recordInsights';
+import BookKeep from './pages/bookKeeping';
 const Stack = createNativeStackNavigator();
 const {Navigator, Screen} = Stack;
 const Tab = createBottomTabNavigator();
@@ -30,9 +31,11 @@ const TabScreen = () => {
           if (route.name === 'Home') {
             iconName = 'icon-shuxiebianxie';
           } else if (route.name === 'ChargeAccount') {
-            iconName = 'icon-bizui';
+            iconName = 'icon-mubiaox';
           } else if (route.name === 'User') {
             iconName = 'icon-wode-wode';
+          } else if (route.name === 'BookKeep') {
+            iconName = 'icon-dingdandingdanmingxishouzhimingxi';
           }
           return (
             <Icon
@@ -46,6 +49,13 @@ const TabScreen = () => {
         tabBarInactiveTintColor: 'gray',
         headerShown: false,
       })}>
+      <Tab.Screen
+        name="BookKeep"
+        component={BookKeep}
+        options={{
+          title: '记账',
+        }}
+      />
       <Tab.Screen
         name="Home"
         component={Home}
