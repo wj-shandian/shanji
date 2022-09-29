@@ -69,4 +69,60 @@ export const styles = StyleSheet.create({
     color: '#333333',
     fontSize: 12,
   },
+  cardListFlex: {
+    marginTop: 60,
+    paddingHorizontal: 12,
+  },
+  cardContentFlex: {},
+  cardHeaderFlex: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingHorizontal: 10,
+  },
+  cardChildFlex: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  cardDateText: {
+    color: '#999',
+    fontSize: 12,
+    marginRight: 16,
+  },
+  priceLabel: {
+    color: '#999',
+    fontSize: 12,
+    marginRight: 16,
+  },
+  priceLabelLast: {
+    color: '#999',
+    fontSize: 12,
+  },
+  priceValue: {
+    color: '#999',
+    fontSize: 16,
+  },
+  listFlex: {
+    backgroundColor: '#fff',
+    borderRadius: 5,
+  },
+  listLineFlex: {
+    height: 45,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  lineIconFlex: {
+    width: 52,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  lineLabelFlex: {
+    borderBottomColor: 'rgba(153,153,153,0.08)',
+    borderBottomWidth: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    flex: 1,
+    height: 45,
+    paddingRight: 10,
+  },
 });

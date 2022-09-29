@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -7,6 +8,7 @@
  */
 
 import React from 'react';
+import {View} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
@@ -18,6 +20,7 @@ import SelectStatus from './pages/selectStatus';
 import Weather from './pages/weather';
 import RecordInsights from './pages/recordInsights';
 import BookKeep from './pages/bookKeeping';
+import AddBookKeeping from './pages/addBookKeeping';
 const Stack = createNativeStackNavigator();
 const {Navigator, Screen} = Stack;
 const Tab = createBottomTabNavigator();
@@ -64,6 +67,27 @@ const TabScreen = () => {
         }}
       />
       <Tab.Screen
+        name="Add"
+        component={AddBookKeeping}
+        options={{
+          title: '添加',
+          tabBarIcon: ({}) => (
+            <View
+              style={{
+                backgroundColor: '#000',
+                borderRadius: 25,
+                width: 50,
+                height: 50,
+                justifyContent: 'center',
+                alignItems: 'center',
+                marginTop: -20,
+              }}>
+              <Icon name="icon-a-ziyuan1" color="#fff" size={16} />
+            </View>
+          ),
+        }}
+      />
+      <Tab.Screen
         name="ChargeAccount"
         component={ChargeAccount}
         options={{
@@ -102,6 +126,11 @@ const App = () => {
         <Screen
           name="RecordInsights"
           component={RecordInsights}
+          options={{headerShown: false}}
+        />
+        <Screen
+          name="AddBookKeeping"
+          component={AddBookKeeping}
           options={{headerShown: false}}
         />
       </Navigator>

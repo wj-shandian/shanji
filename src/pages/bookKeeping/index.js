@@ -3,6 +3,56 @@ import {View, Text} from 'react-native';
 import {Icon} from '../../component/index';
 import {styles} from './style';
 
+function Card() {
+  return (
+    <View style={styles.cardContentFlex}>
+      <View style={styles.cardHeaderFlex}>
+        <View style={styles.cardChildFlex}>
+          <Text style={styles.cardDateText}>09月22日</Text>
+          <Text style={styles.cardDateText}>星期四</Text>
+        </View>
+        <View style={styles.cardChildFlex}>
+          <Text style={styles.priceLabel}>
+            收入：<Text style={styles.priceValue}>888</Text>
+          </Text>
+          <Text style={styles.priceLabelLast}>
+            支出：<Text style={styles.priceValue}>888</Text>
+          </Text>
+        </View>
+      </View>
+      <View style={styles.listFlex}>
+        <View style={styles.listLineFlex}>
+          <View style={styles.lineIconFlex}>
+            <Icon name="icon-gouwu" size={26} />
+          </View>
+          <View style={styles.lineLabelFlex}>
+            <Text>购物</Text>
+            <Text>55</Text>
+          </View>
+        </View>
+        <View style={styles.listLineFlex}>
+          <View style={styles.lineIconFlex}>
+            <Icon name="icon-gouwu" size={26} />
+          </View>
+          <View style={styles.lineLabelFlex}>
+            <Text>购物</Text>
+            <Text>55</Text>
+          </View>
+        </View>
+        <View style={styles.listLineFlex}>
+          <View style={styles.lineIconFlex}>
+            <Icon name="icon-gouwu" size={26} />
+          </View>
+          <View style={styles.lineLabelFlex}>
+            <Text>购物</Text>
+            <Text>55</Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  );
+}
+
 export default function BookKeep() {
   return (
     <View style={styles.bookKeepFlex}>
@@ -45,6 +95,9 @@ export default function BookKeep() {
             <Text style={styles.footerLabelText}>分配计划</Text>
           </View>
         </View>
+      </View>
+      <View style={styles.cardListFlex}>
+        <Card />
       </View>
     </View>
   );
